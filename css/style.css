@@ -246,3 +246,21 @@ footer p{
     text-align: center;
 }
 /* pagina de Cadastro */
+.titulo_pagina{
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/cadastro.png");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-top: 1em;
+    align-items: flex-start;
+}
+
+.campo{
+    color: #fff;
+}

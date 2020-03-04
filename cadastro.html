@@ -22,10 +22,10 @@
 
 
                         <li><a href="index.html" title="voltar para pagina inicial">INICIO</a></li>
-                        <li><a href="#horarios" title="horarios">HORARIOS</a></li>
-                        <li><a href="#resultados" title="resultado das partidas">RESULTADOS</a></li>
-                        <li><a href="#noticias" title="noticias">NOTICIAS</a></li>
-                        <li><a href="#" title="busca"><i class="fas fa-search"></i></a></li>
+                        <li><a href="index.html#horarios" title="horarios">HORARIOS</a></li>
+                        <li><a href="index.html#resultados" title="resultado das partidas">RESULTADOS</a></li>
+                        <li><a href="index.html#noticias" title="noticias">NOTICIAS</a></li>
+                        <li><a href="index.html#" title="busca"><i class="fas fa-search"></i></a></li>
 
                     </ul>
                 </nav>
@@ -33,12 +33,65 @@
         </div>
     </header>
     <main>
-        <div class="titulo">
+        <div class="titulo_pagina">
             <h1>cadastro de jogador</h1>
         </div>
 
+        <form action="" method="post">
 
-    </main>
+            <div class="campo">
+                <label for="nome"> nome do jogador</label>
+                <input type="text" name="nomdedojogador" id="nome">
+            </div>
+            
+            <div class="campo">
+                <label for="nick"> nick do jogador</label>
+                <input type="text" name="nickdojogador" id="nick">
+            </div>
+            
+            <div class="campo">
+                <label for="email"> eamil</label>
+                <input type="text" name="email" id="email">
+            </div>
+            
+            <div class="campo">
+                <label for="senha"> senha </label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            <div class="campo">
+                <label for="nascimento"> data </label>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+            
+            <div class="campo">
+                <label for="pais"> pais </label>
+                <select name="pais" id="pais">
+                    <option value="BR">Brasil</option>
+                    <option value="US">Estados unidos</option>
+                    <option value="ES">Espanha</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>
+                    sexo
+                </legend>
+                <input type="radio" name="sexo" value="M" id="Masculino">
+                <label for="masculino">masculino</label>
+                
+                <input type="radio" name="sexo" value="F" id="Feminino">
+                <label for="Feminino">Feminino</label>
+            </fieldset>
+            <div class="campo">
+                <input type="checkbox" name="check" id check>
+                <label for="check">declaro que li e aceito os termos de uso deste site</label>
+                
+            </div>
+            
+        </form>
+            
+            
+        </main>
     <footer>
         <div class="container">
 
