@@ -333,3 +333,36 @@ fieldset label{
     margin-bottom: 2em;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px){
+    .campea{ 
+        right: 0%;
+    }
+
+    .sobre .container div{
+        width: 50%;
+    }
+
+    .container{
+        width: 95%;
+    }
+}
+/* fim media 1200px */
+
+
+@media screen and (max-width: 768px){
+    header img{
+        max-width: 130px;
+    }        
+    .campea{
+        max-width: 345px;
+        top: 750px;
+    }
+
+    .sobre .container div{
+        width: 55%;
+        margin-left: 30px;
+    }
+    
+}
+/* fim media 768px */
