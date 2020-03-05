@@ -37,10 +37,11 @@
             <h1>cadastro de jogador</h1>
         </div>
 
-        <form action="" method="post">
+        <form action="" method="post" class="form_cadastro">
 
             <div class="campo">
-                <label for="nome"> nome do jogador</label>
+                <label for="nome"> nome do jogador(a)
+                </label>
                 <input type="text" name="nomdedojogador" id="nome">
             </div>
             
@@ -51,7 +52,7 @@
             
             <div class="campo">
                 <label for="email"> eamil</label>
-                <input type="text" name="email" id="email">
+                <input type="email" name="email" id="email">
             </div>
             
             <div class="campo">
@@ -61,7 +62,7 @@
 
             <div class="campo">
                 <label for="nascimento"> data </label>
-                <input type="date" name="nascimento" id="nascimento">
+                <input type="date" name="nascimento" id="nascimento" max="2020-03-05" min="1920-01-01">
             </div>
             
             <div class="campo">
@@ -82,11 +83,13 @@
                 <input type="radio" name="sexo" value="F" id="Feminino">
                 <label for="Feminino">Feminino</label>
             </fieldset>
-            <div class="campo">
+
+            <div class="campo termos">
                 <input type="checkbox" name="check" id check>
                 <label for="check">declaro que li e aceito os termos de uso deste site</label>
                 
             </div>
+            <button type="submit" class="btn gradient">cadastrar</button>
             
         </form>
             

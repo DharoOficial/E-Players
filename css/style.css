@@ -41,8 +41,7 @@ ul{
     justify-content: space-around;
     align-items: center;
     padding: 20px 0 ;
-    box-shadow: 0 13px 10px rgba(0, 0, 0, 0.5);
-    
+    box-shadow: 0 13px 10px rgba(0, 0, 0, 0.5);    
 }
 .cabecalho nav{
     width: 60%;
@@ -248,10 +247,9 @@ footer p{
 /* pagina de Cadastro */
 .titulo_pagina{
     width: 100%;
-    height: 300px;
+    height: 395px;
     background-image: url("../img/cadastro.png");
-    background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     display: flex;
@@ -262,5 +260,76 @@ footer p{
 }
 
 .campo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.form_cadastro{
     color: #fff;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 10px #55588d, 0px -4px 10px #55588d;
+    padding: 0.5em;  
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    margin-top: 25px;
+    margin-bottom: 300px;
+}
+.campo label{
+    text-transform: uppercase;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="date"],
+select{
+    border: none;
+    background-color: var(--background);
+    color: #ccc;
+    border-bottom: solid 1px #474747;
+    width: 60%;
+    padding: 0.5em;
+}
+input[type="date"]{
+    text-align: center;
+    font-size: 1.3em;
+}
+input:focus, select:focus{
+    outline: none;
+    background-color: #474747;
+    box-shadow: 0 0 5px #474747;
+    border-bottom: 1px solid var(--purple);
+}
+fieldset{
+    border: none;
+    width: 100%;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+fieldset legend{
+    text-transform: uppercase;
+}
+input[tyoe="radio"]{
+    margin-right: 0.1em;
+}
+fieldset label{
+    margin-right: 0.5em;
+}
+.termos{
+    align-items: center;
+    justify-content: start;
+}
+.termos label{
+    text-transform: lowercase;
+    margin-left: 0.5em;
+}
+.form_cadastro button{
+    border: none;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    cursor: pointer;
 }
